@@ -1,0 +1,92 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "Fly-tipping incidents and actions reported by local authorities 2012-13 to 2021-22",
+    "description": "Fly-tipping incidents and actions reported by local authorities 2012-13 to 2021-22",
+    "creator": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs",
+    "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "keywords": [
+        "flytipping",
+        "waste",
+        "clearance",
+        "dumping",
+        "rubbish"
+    ],
+    "columns": {
+        "Year": {
+            "type": "dimension"
+        },
+        "ONS Code": {
+            "from_template": "statistical-geography"
+        },
+        "LA Name": false,
+        "Region": {
+            "type": "dimension"
+        },
+        "Total Incidents": {
+            "type": "observations",
+            "data_type": "integer"
+        },
+        "incidence": {
+            "label": "Incidence Type",
+            "type": "dimension",
+            "code_list": {
+                "title": "Incidence Types",
+                "values": [
+                    "Highway Incidents",
+                    "Footpath / Bridleway Incidents",
+                    "Back Alleyway Incidents",
+                    "Railway Incidents",
+                    "Council Land Incidents",
+                    "Agricultural Incidents",
+                    "Private / Residential Incidents",
+                    "Commercial / Industrial Incidents",
+                    "Watercourse / Bank Incidents",
+                    "Other (unidentified) Incidents",
+                    "Animal Carcass Incidents",
+                    "Green Incidents",
+                    "Vehicle Parts Incidents",
+                    "White Goods Incidents",
+                    "Other Electrical Incidents",
+                    "Tyres Incidents",
+                    "Asbestos Incidents",
+                    "Clinical Incidents",
+                    "Constr / Demol / Excav Incidents",
+                    "Black Bags - Commercial Incidents",
+                    "Black Bags - Household Incidents",
+                    "Chemical Drums, Oil, Fuel Incidents",
+                    "Other Household Waste Incidents",
+                    "Other Commercial Waste Incidents",
+                    "Primary Waste Type Measures Other (unidentified) Incidents",
+                    "Single Black Bag Incidents",
+                    "Single Black Bag Clearance Costs (£)",
+                    "Single Item Incidents",
+                    "Single Item Clearance Costs (£)",
+                    "Car Boot or Less Incidents",
+                    "Car Boot or Less Clearance Costs (£)",
+                    "Small Van Load Incidents",
+                    "Small Van Load Clearance Costs (£)",
+                    "Transit Van Load Incidents",
+                    "Transit Van Load Clearance Costs (£)",
+                    "Tipper Lorry Load Incidents",
+                    "Tipper Lorry Load Clearance Costs (£)",
+                    "Significant / Multi Loads Incidents",
+                    "Sig / Multi Loads Clearance Costs (£)",
+                    "Total Incidents Clearance Costs (£)"
+                ]
+            }
+        },
+        "numerical": {
+            "type": "observations",
+            "measure": {
+                "label": "Count of Incidents",
+                "from_existing": "https://purl.org/csv-cubed/resources/measures#incidents"
+            },
+            "data_type": "integer",
+            "unit": {
+                "label": "Number",
+                "from_existing": "http://qudt.org/vocab/unit/NUM"
+            }
+        }
+    }
+}
