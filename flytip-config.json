@@ -1,0 +1,284 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "Fly-tipping incidents and actions reported by local authorities 2012-13 to 2021-22",
+    "description": "Fly-tipping incidents and actions reported by local authorities 2012-13 to 2021-22",
+    "creator": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs",
+    "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "keywords": [
+        "flytipping",
+        "waste",
+        "clearance",
+        "dumping",
+        "rubbish"
+    ],
+    "columns": {
+        "Year": {
+            "type": "dimension"
+        },
+        "ONS Code": {
+            "from_template": "statistical-geography"
+        },
+        "LA Name": false,
+        "Region": {
+            "type": "dimension"
+        },
+        ,
+      "Total Incidents": {
+        "type": "dimension",
+        "code_list": {
+          "title": "All incidents",
+          "summary": "Total Fly-tipping incidents and actions reported by local authorities in England.",
+          "concepts": [
+                {
+                  "label": "Total Incidents",
+                  "description": "Total length of all major roads",
+                  "notation": "Total all major roads",
+                  "sort_order": 0,
+                  "children": [
+                    {
+                        {
+                          "label": "Highway Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Trunk Motorways"
+                        },
+                        {
+                          "label": "Footpath / Bridleway Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Back Alleyway Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Railway Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Council Land Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Agricultural Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Private / Residential Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Commercial / Industrial Incidents,Watercourse / Bank Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Other (unidentified) Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Animal Carcass Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Green Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Vehicle Parts Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "White Goods Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Other Electrical Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Tyres Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Asbestos Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Clinical Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Constr / Demol / Excav Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Black Bags - Commercial Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Black Bags - Household Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways",
+                          "children": [
+                            {
+                              "label": "Single Black Bag Clearance Costs (£)",
+                              "description": "Total length of all major roads",
+                              "notation": "Total all major roads",
+                              "sort_order": 0,
+                        },
+                        {
+                          "label": "Chemical Drums, Oil, Fuel Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Other Household Waste Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Other Commercial Waste Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Primary Waste Type Measures Other (unidentified) Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Single Black Bag Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Single Item Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways",
+                          "children": [
+                            {
+                              "label": "Single Item Clearance Costs (£)",
+                              "description": "Total length of all major roads",
+                              "notation": "Total all major roads",
+                              "sort_order": 0,
+                        },
+                        {
+                          "label": "Car Boot or Less Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways",
+                          "children": [
+                            {
+                              "label": "Car Boot or Less Clearance Costs (£)",
+                              "description": "Total length of all major roads",
+                              "notation": "Total all major roads",
+                              "sort_order": 0,
+                        },
+                        {
+                          "label": "Small Van Load Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways",
+                          "children": [
+                            {
+                              "label": "Small Van Load Clearance Costs (£)",
+                              "description": "Total length of all major roads",
+                              "notation": "Total all major roads",
+                              "sort_order": 0,
+                        },
+                        {
+                          "label": "Transit Van Load Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways",
+                          "children": [
+                            {
+                              "label": "Transit Van Load Clearance Costs (£)",
+                              "description": "Total length of all major roads",
+                              "notation": "Total all major roads",
+                              "sort_order": 0,
+                        },
+                        {
+                          "label": "Tipper Lorry Load Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways",
+                          "children": [
+                            {
+                              "label": "Transit Van Load Clearance Costs (£)",
+                              "description": "Total length of all major roads",
+                              "notation": "Total all major roads",
+                              "sort_order": 0,
+                        },
+                        {
+                          "label": "Tipper Lorry Load Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways",
+                          "children": [
+                            {
+                              "label": "Tipper Lorry Load Clearance Costs (£)",
+                              "description": "Total length of all major roads",
+                              "notation": "Total all major roads",
+                              "sort_order": 0,
+                        },
+                        {
+                          "label": "Significant / Multi Loads Incidents",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways",
+                          "children": [
+                            {
+                              "label": "Sig / Multi Loads Clearance Costs (£)",
+                              "description": "Total length of all major roads",
+                              "notation": "Total all major roads",
+                              "sort_order": 0,
+                        },
+                        {
+                          "label": "Total Incidents Clearance Costs (£)",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Mid population estimates",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Incidents per 1,000 people",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        },
+                        {
+                          "label": "Reporting basis",
+                          "description": "Length of trunk motorways",
+                          "notation": "Principle Motorways"
+                        }
+                      ]
+                    },
+                 ,
+        "numerical": {
+            "type": "observations",
+            "measure": {
+                "label": "Count of Incidents",
+                "from_existing": "https://purl.org/csv-cubed/resources/measures#incidents"
+            },
+            "data_type": "integer",
+            "unit": {
+                "label": "Number",
+                "from_existing": "http://qudt.org/vocab/unit/NUM"
+            }
+        }
+    }
+}

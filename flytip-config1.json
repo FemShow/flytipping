@@ -1,0 +1,310 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "Fly-tipping incidents and actions reported by local authorities 2012-13 to 2021-22",
+    "description": "Fly-tipping incidents and actions reported by local authorities 2012-13 to 2021-22",
+    "creator": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs",
+    "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "keywords": [
+      "flytipping",
+      "waste",
+      "clearance",
+      "dumping",
+      "rubbish"
+    ],
+    "columns": {
+      "Year": {
+        "from_template": "government-year"
+      },
+      "ONS Code": {
+        "from_template": "statistical-geography"
+      },
+      "LA Name": {
+        "type": "dimension"
+      },
+      "Region": {
+        "type": "dimension"
+      },
+      "Total Incidents": {
+        "type": "dimension",
+        "code_list": {
+          "title": "All incidents",
+          "summary": "Total Fly-tipping incidents and actions reported by local authorities in England.",
+          "concepts": [
+            {
+              "label": "Total Incidents",
+              "description": "Fly-tipping incidents and actions reported",
+              "notation": "Total Incidents",
+              "sort_order": 0,
+              "children": [
+                {
+                  "label": "Footpath / Bridleway Incidents",
+                  "description": "Footpath / Bridleway Incidents",
+                  "notation": "Footpath / Bridleway Incidents"
+                },
+                {
+                  "label": "Back Alleyway Incidents",
+                  "description": "Back Alleyway Incidents",
+                  "notation": "Back Alleyway Incidents"
+                },
+                {
+                  "label": "Railway Incidents",
+                  "description": "Railway Incidents",
+                  "notation": "Railway Incidents"
+                },
+                {
+                  "label": "Council Land Incidents",
+                  "description": "Council Land Incidents",
+                  "notation": "Council Land Incidents"
+                },
+                {
+                  "label": "Agricultural Incidents",
+                  "description": "Agricultural Incidents",
+                  "notation": "Agricultural Incidents"
+                },
+                {
+                  "label": "Private / Residential Incidents",
+                  "description": "Private / Residential Incidents",
+                  "notation": "Private / Residential Incidents"
+                },
+                {
+                  "label": "Commercial / Industrial Incidents",
+                  "description": "Commercial / Industrial Incidents",
+                  "notation": "Commercial / Industrial Incidents"
+                },
+                {
+                  "label": "Watercourse / Bank Incidents",
+                  "description": "Watercourse / Bank Incidents",
+                  "notation": "Watercourse / Bank Incidents"
+                },
+                {
+                  "label": "Other (unidentified) Incidents",
+                  "description": "Other (unidentified) Incidents",
+                  "notation": "Other (unidentified) Incidents"
+                },
+                {
+                  "label": "Animal Carcass Incidents",
+                  "description": "Animal Carcass Incidents",
+                  "notation": "Animal Carcass Incidents"
+                },
+                {
+                  "label": "Green Incidents",
+                  "description": "Green Incidents",
+                  "notation": "Green Incidents"
+                },
+                {
+                  "label": "Vehicle Parts Incidents",
+                  "description": "Vehicle Parts Incidents",
+                  "notation": "Vehicle Parts Incidents"
+                },
+                {
+                  "label": "White Goods Incidents",
+                  "description": "White Goods Incidents",
+                  "notation": "White Goods Incidents"
+                },
+                {
+                  "label": "Other Electrical Incidents",
+                  "description": "Other Electrical Incidents",
+                  "notation": "Other Electrical Incidents"
+                },
+                {
+                  "label": "Tyres Incidents",
+                  "description": "Tyres Incidents",
+                  "notation": "Tyres Incidents"
+                },
+                {
+                  "label": "Asbestos Incidents",
+                  "description": "Asbestos Incidents",
+                  "notation": "Asbestos Incidents"
+                },
+                {
+                  "label": "Clinical Incidents",
+                  "description": "Clinical Incidents",
+                  "notation": "Clinical Incidents"
+                },
+                {
+                  "label": "Construction / Demolition / Excavation Incidents",
+                  "description": "Construction / Demolition / Excavation Incidents",
+                  "notation": "Construction / Demolition / Excavation Incidents"
+                },
+                {
+                  "label": "Black Bags - Commercial Incidents",
+                  "description": "Black Bags - Commercial Incidents",
+                  "notation": "Black Bags - Commercial Incidents"
+                },
+                {
+                  "label": "Black Bags - Household Incidents",
+                  "description": "Black Bags - Household Incidents",
+                  "notation": "Black Bags - Household Incidents"
+                },
+                {
+                  "label": "Chemical Drums, Oil, Fuel Incidents",
+                  "description": "Chemical Drums, Oil, Fuel Incidents",
+                  "notation": "Chemical Drums, Oil, Fuel Incidents"
+                },
+                {
+                  "label": "Other Household Waste Incidents",
+                  "description": "Other Household Waste Incidents",
+                  "notation": "Other Household Waste Incidents"
+                },
+                {
+                  "label": "Other Commercial Waste Incidents",
+                  "description": "Other Commercial Waste Incidents",
+                  "notation": "Other Commercial Waste Incidents"
+                },
+                {
+                  "label": "Primary Waste Type Measures Other (unidentified) Incidents",
+                  "description": "Primary Waste Type Measures Other (unidentified) Incidents",
+                  "notation": "Primary Waste Type Measures Other (unidentified) Incidents"
+                },
+                {
+                  "label": "Single Black Bag Incidents",
+                  "description": "Single Black Bag Incidents",
+                  "notation": "Single Black Bag Incidents",
+                  "children": [
+                    {
+                      "label": "Single Black Bag Clearance Costs (£)",
+                      "description": "Single Black Bag Clearance Costs (£)",
+                      "notation": "Single Black Bag Clearance Costs (£)",
+                      "sort_order": 0
+                    }
+                  ]
+                },
+                {
+                  "label": "Single Item Incidents",
+                  "description": "Single Item Incidents",
+                  "notation": "Single Item Incidents",
+                  "children": [
+                    {
+                      "label": "Single Item Clearance Costs (£)",
+                      "description": "Single Item Clearance Costs (£)",
+                      "notation": "Single Item Clearance Costs (£)",
+                      "sort_order": 0
+                    }
+                  ]
+                },
+                {
+                  "label": "Car Boot or Less Incidents",
+                  "description": "Car Boot or Less Incidents",
+                  "notation": "Car Boot or Less Incidents",
+                  "children": [
+                    {
+                      "label": "Car Boot or Less Clearance Costs (£)",
+                      "description": "Total length of all major roads",
+                      "notation": "Car Boot or Less Incidents",
+                      "sort_order": 0
+                    }
+                  ]
+                },
+                {
+                  "label": "Small Van Load Incidents",
+                  "description": "Small Van Load Incidents",
+                  "notation": "Small Van Load Incidents",
+                  "children": [
+                    {
+                      "label": "Small Van Load Clearance Costs (£)",
+                      "description": "Small Van Load Clearance Costs (£)",
+                      "notation": "Small Van Load Clearance Costs (£)",
+                      "sort_order": 0
+                    }
+                  ]
+                },
+                {
+                  "label": "Transit Van Load Incidents",
+                  "description": "Transit Van Load Incidents",
+                  "notation": "Transit Van Load Incidents",
+                  "children": [
+                    {
+                      "label": "Transit Van Load Clearance Costs (£)",
+                      "description": "Transit Van Load Clearance Costs (£)",
+                      "notation": "Transit Van Load Clearance Costs (£)",
+                      "sort_order": 0
+                    }
+                  ]
+                },
+                {
+                  "label": "Tipper Lorry Load Incidents",
+                  "description": "Tipper Lorry Load Incidents",
+                  "notation": "Tipper Lorry Load Incidents",
+                  "children": [
+                    {
+                      "label": "Tipper Lorry Load Clearance Costs (£)",
+                      "description": "Tipper Lorry Load Clearance Costs (£)",
+                      "notation": "Tipper Lorry Load Clearance Costs (£)",
+                      "sort_order": 0
+                    }
+                  ]
+                },
+                {
+                  "label": "Significant / Multi Loads Incidents",
+                  "description": "Significant / Multi Loads Incidents",
+                  "notation": "Significant / Multi Loads Incidents",
+                  "children": [
+                    {
+                      "label": "Significant / Multi Loads Clearance Costs (£)",
+                      "description": "Significant / Multi Loads Clearance Costs (£)",
+                      "notation": "Significant / Multi Loads Clearance Costs (£)",
+                      "sort_order": 0
+                    }
+                  ]
+                },
+                {
+                  "label": "Total Incidents Clearance Costs (£)",
+                  "description": "Length of trunk motorways",
+                  "notation": "Principle Motorways"
+                }
+              ]
+            }
+          ]
+        },
+        "numerical": {
+          "type": "observations",
+          "measure": {
+            "label": "Count of Incidents",
+            "from_existing": "https://purl.org/csv-cubed/resources/measures#incidents"
+          },
+          "data_type": "integer",
+          "unit": {
+            "label": "Number",
+            "from_existing": "http://qudt.org/vocab/unit/NUM"
+          }
+        }
+      },
+      "Mid population estimates": {
+        "type": "dimension",
+        "numerical": {
+          "type": "observations",
+          "measure": {
+            "label": "Mid population estimates",
+            "description": "Mid population estimates",
+            "notation": "Mid population estimates"
+          },
+          "data_type": "integer",
+          "unit": {
+            "label": "Number",
+            "from_existing": "http://qudt.org/vocab/unit/NUM"
+          }
+        }
+      },
+      "Incidents per 1,000 people": {
+        "type": "dimension",
+        "numerical": {
+          "type": "observations",
+          "measure": {
+            "label": "Incidents per 1,000 people",
+            "description": "Average number of incidents",
+            "notation": "Incidents per 1,000 people"
+          },
+          "data_type": "float",
+          "unit": {
+            "label": "Number",
+            "from_existing": "http://qudt.org/vocab/unit/NUM"
+          }
+        }
+      },
+      "Reporting basis": {
+        "from_template": "observation-status"
+      }
+    }
+  }
+  
